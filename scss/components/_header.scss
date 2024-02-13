@@ -1,0 +1,137 @@
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid var(--header-border);
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.head-studio {
+    color: var(--head-studio);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-right: 93px;
+}
+
+.head-web {
+    color: var(--web);
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navigation-list {
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.header-nav {
+    color: var(--head-nav);
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    transition-property: color;
+
+    &:hover,
+    &:focus{
+        animation-name: changeColor;
+            animation-duration: 250ms;
+            animation-timing-function: var(--timing-function);
+            animation-fill-mode: forwards;
+    }
+}
+
+
+
+@keyframes changeColor {
+    0% {
+        color: #757575;
+
+
+    }
+
+    100% {
+        color: var(--after-hover-color);
+    }
+}
+
+.header-nav.current::after {
+    content: '';
+    display: block;
+    background-color: var(--button);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    left: 0;
+    bottom: -30px;
+    transition-property: background-color bottom width;
+
+}
+
+.current:hover::after {
+    left: -5%;
+}
+
+.current:hover::after {
+    background-color: var(--after-hover-color);
+    bottom: -25px;
+    width: 110%;
+
+    transition-duration: 250ms;
+}
+
+
+
+.header-contacts-list {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.header-contacts-list .header-contacts:hover {
+    color: var(--button);
+}
+
+.header-contacts:hover .contact-icon {
+    fill: var(--button);
+    transition-duration: 250ms;
+}
+
+.header-contacts {
+    color: var(--head-contacts);
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+    transition-property: color;
+
+    &:hover,
+    &:focus{
+        color: var(--hover-color);
+            transition-duration: 250ms;
+    }
+}
+
+.email {
+    margin-right: 50px;
+}
+
