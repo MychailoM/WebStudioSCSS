@@ -1,7 +1,11 @@
-@import './base/all-style';
 @import './base/variables';
+@import './base/all-style';
 @import './components/header';
-@import './components/central/base';
-@import './components/central/modal';
-@import './components/portfolio/base';
+@import './components/hero';
+@import './components/benefits';
+@import './components/work';
+@import './components/team';
+@import './components/customers';
+@import './components/modal';
 @import './components/footer';
+@import './components/portfolio';
