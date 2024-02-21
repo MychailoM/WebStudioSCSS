@@ -1,0 +1,120 @@
+.footer {
+    background-color: $bacraund-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__studio {
+    color: $foot-adress;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 171.429%;
+}
+
+.footer__web {
+    color: $hover-color;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__geo {
+    color: $foot-adress;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171.429%;
+
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts {
+    color: $foot-adress;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171.429%;
+}
+
+.footer__list-name {
+    color: $foot-adress;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__social-icon {
+    width: 20px;
+    height: 20px;
+
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 206px;
+}
+
+.footer__social-link {
+    fill: $icon-bg;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition-property: fill background-color;
+}
+
+.footer__social-link:hover {
+    transition-duration: 250ms;
+    fill: $foot-adress;
+    background-color: $hover-color;
+}
+
+
+
+.footer__input-container {
+    display: flex;
+}
+
+.footer__input-subscribe {
+    padding: 15px 250px 15px 15px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    margin-right: 12px;
+
+}
+
+.footer__button-subscribe {
+    border-radius: 4px;
+    background-color: $hover-color;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: $foot-adress;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-button-subscribe:hover {
+    cursor: pointer;
+}
+
+.footer__send-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    fill: $foot-adress;
+}

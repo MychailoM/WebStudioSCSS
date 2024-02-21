@@ -1,0 +1,133 @@
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid $header-border;
+}
+
+.header__logo-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header__studio {
+    color: $head-studio;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-right: 93px;
+}
+
+.header__web {
+    color: $hover-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+}
+
+.header__nav-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__navigation-list {
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.header__nav {
+    color: $main-titles;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    transition-property: color;
+
+    &:hover{
+        animation-name: changeColor;
+            animation-duration: 250ms;
+            animation-timing-function: $timing-function;
+            animation-fill-mode: forwards;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        color: #757575;
+
+
+    }
+
+    100% {
+        color: $hover-color;
+    }
+}
+
+.header__nav.current::after {
+    content: '';
+    display: block;
+    background-color: $hover-color;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    left: 0;
+    bottom: -30px;
+    transition-property: background-color bottom width;
+}
+
+.current:hover::after {
+    left: -5%;
+}
+
+.current:hover::after {
+    background-color: $after-hover-color;
+    bottom: -25px;
+    width: 110%;
+
+    transition-duration: 250ms;
+}
+
+
+
+.header__contacts-list {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.header__contacts-list .header__contacts:hover {
+    color: $hover-color;
+}
+
+.header__contacts:hover .header__contact-icon {
+    fill: $hover-color;
+    transition-duration: 250ms;
+}
+
+.header__contacts {
+    color: $text-color;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right: 10px;
+    transition-property: color;
+
+    &:hover,
+    &:focus{
+        color: $hover-color;
+            transition-duration: 250ms;
+    }
+}
+
+.header__email {
+    margin-right: 50px;
+}
+
