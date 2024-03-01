@@ -145,6 +145,14 @@ body {
   padding: 0 15px;
 }
 
+.name__section {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .header__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +160,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -204,6 +214,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header__nav {
@@ -406,14 +418,6 @@ body {
   line-height: 171.429%;
 }
 
-.name__section {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .work {
   padding-top: 118px;
   padding-bottom: 94px;
@@ -426,6 +430,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .work__card {
@@ -474,6 +480,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__wrap {
@@ -509,6 +517,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-right: 32px;
   margin-left: 32px;
   padding-bottom: 30px;
@@ -558,6 +568,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .customers__icon {
@@ -816,6 +828,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__contacts {
@@ -848,6 +862,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 206px;
 }
 
@@ -975,17 +991,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .project__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
   /* display: flex;
   flex-wrap: wrap;

@@ -43,8 +43,7 @@
 }
 
 .project__filter-list {
-    display: flex;
-    justify-content: space-between;
+    @include spase-betven();
 
 }
 
@@ -53,9 +52,7 @@
 
 
 .project__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @include spase-betven();
     gap: 30px;
     /* display: flex;
     flex-wrap: wrap;

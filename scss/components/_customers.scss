@@ -3,8 +3,7 @@
 }
 
 .regular__customers-list {
-    display: flex;
-    justify-content: space-between;
+    @include spase-betven();
 }
 
 .customers__icon {

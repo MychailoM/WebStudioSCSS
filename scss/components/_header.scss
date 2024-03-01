@@ -1,6 +1,5 @@
 .header__wrap {
-    display: flex;
-    justify-content: space-between;
+    @include spase-betven();
     align-items: center;
 }
 
@@ -36,8 +35,7 @@
 
 .header__navigation-list {
     width: 281px;
-    display: flex;
-    justify-content: space-between;
+    @include spase-betven();
 }
 
 
