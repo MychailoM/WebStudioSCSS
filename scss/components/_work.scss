@@ -1,11 +1,19 @@
+.work {
+    padding-top: 118px;
+    padding-bottom: 94px;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .work{
+        display: block;
+    }    
+}
 .name__section {
     @extend %name-section
 }
 
-.work {
-    padding-top: 118px;
-    padding-bottom: 94px;
-}
+
 
 .work__list {
     @include spase-betven();

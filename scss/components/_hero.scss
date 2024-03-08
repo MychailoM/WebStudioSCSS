@@ -1,14 +1,13 @@
-.hero {
-    background: url(../photo/Img.webp), lightgray 0px -147.517px / 100% 170.667%;
-    background-size: cover;
+.hero{
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background: url(./../../photo/Img.webp), lightgray 0px -147.517px / 100% 170.667%;     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 200px;
-    padding-top: 200px;
 }
 
 .hero__title {
     color: $foot-adress;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     text-align: center;
     line-height: 136%;
@@ -16,24 +15,47 @@
     margin-bottom: 30px;
 }
 
-.hero__wrap {
+.hero__wrap{
     display: flex;
     justify-content: center;
 }
 
 .hero__btn {
+    
     color: $foot-adress;
     background-color: $hover-color;
     font-weight: 700;
     font-size: 16px;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
     &:hover,
-    &:focus{
+    &:focus {
         cursor: pointer;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .hero{
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .hero__title{
+        font-size: 44px;
+    }
+
+    .hero__btn{
+        padding: 10px 32px;
+    }
+}
+
+
+
 
