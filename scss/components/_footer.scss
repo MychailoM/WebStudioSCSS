@@ -5,6 +5,8 @@
 }
 
 .footer__studio {
+    display: flex;
+    justify-content: center;
     color: $foot-adress;
     font-size: 26px;
     font-family: 'Raleway', sans-serif;
@@ -13,12 +15,21 @@
 }
 
 .footer__web {
+    
     color: $hover-color;
     font-size: 26px;
     font-family: 'Raleway', sans-serif;
 }
 
+.footer__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .footer__geo {
+    display: flex;
+        justify-content: center;
     color: $foot-adress;
     font-family: Roboto;
     font-weight: 400;
@@ -27,19 +38,22 @@
 
 }
 
-.footer__list {
-    @include spase-betven();
-}
+
 
 .footer__contacts {
+    display: flex;
+        justify-content: center;
     color: $foot-adress;
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 171.429%;
+    
 }
 
 .footer__list-name {
+    display: flex;
+    justify-content: center;
     color: $foot-adress;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -47,6 +61,7 @@
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .footer__social-icon {
@@ -58,6 +73,7 @@
 .footer__social-list {
     @include spase-betven();
     width: 206px;
+    
 }
 
 .footer__social-link {
@@ -70,22 +86,23 @@
     align-items: center;
     background-color: rgba(255, 255, 255, 0.10);
     transition-property: fill background-color;
+
+    &:hover,
+    &:focus {
+        transition-duration: 250ms;
+        fill: $foot-adress;
+        background-color: $hover-color;
+    }
 }
-
-.footer__social-link:hover {
-    transition-duration: 250ms;
-    fill: $foot-adress;
-    background-color: $hover-color;
-}
-
-
 
 .footer__input-container {
-    display: flex;
+    
 }
 
 .footer__input-subscribe {
-    padding: 15px 250px 15px 15px;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px 150px 15px 15px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
@@ -94,21 +111,23 @@
 }
 
 .footer__button-subscribe {
+    
+    display: block;
+    margin: 0 auto;
     border-radius: 4px;
     background-color: $hover-color;
     width: 200px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: none;
     color: $foot-adress;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
-.footer-button-subscribe:hover {
-    cursor: pointer;
-}
+
 
 .footer__send-icon {
     width: 24px;
@@ -116,3 +135,67 @@
     margin-left: 10px;
     fill: $foot-adress;
 }
+
+@media screen and (min-width: 480px) {
+    .footer__input-subscribe {
+        padding: 15px 260px 15px 16px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+        
+        
+        
+        
+
+        .footer__geo {justify-content: start;}
+
+        .footer__list {
+            
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .footer__input-subscribe {
+            padding: 15px 387px 15px 16px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__studio {
+    
+            justify-content: left;
+        }
+    
+        .footer__contacts {
+    
+            justify-content: left;
+        }
+
+    .footer__input-subscribe {
+        padding: 15px 295px 15px 16px;
+        margin-right: 0;
+    }
+
+        .footer__list {
+    
+            
+            flex-wrap: nowrap;
+            
+        }
+
+        .footer__input-container {
+            display: flex;
+        }
+}
+
+
+
+
+
+
+
+
+
