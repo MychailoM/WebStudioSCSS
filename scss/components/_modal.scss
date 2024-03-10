@@ -31,7 +31,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 528px;
+    width: 310px;
     min-height: 581px;
     background-color: $foot-adress;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -39,7 +39,7 @@
 
 .modal__close {
     margin-top: 8px;
-    margin-left: 490px;
+    margin-left: 310px;
     margin-right: 8px;
     width: 30px;
     height: 30px;
@@ -58,17 +58,68 @@
     fill: $head-studio;
     transition-property: fill;
     transition-duration: 333ms;
-}
 
-.modal-icon:hover,
-.modal-icon:focus {
-    fill: $hover-color;
+    &:hover,
+    &:focus{
+        fill: $hover-color;
+    }
 }
 
 .modal__form {
-    width: 448px;
+    width: 235px;
     margin: 0 40px;
 
+}
+
+.modal__form-input {
+    position: relative;
+    padding-left: 40px;
+    width: 190px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    .modal__form-input {
+        width: 330px;
+    }
+
+        .modal__form {
+            width: 375px;
+        }
+
+
+        .modal {
+            width: 450px;
+        }
+
+        .modal__close{
+            margin-left: 410px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+    .modal__form-input {
+            width: 410px;
+        }
+    
+        .modal__form {
+            width: 455px;
+        }
+
+        .modal {
+            width: 528px;
+        }
+
+                .modal__close {
+                    margin-left: 490px;
+                }
 }
 
 .modal__form-title {
@@ -95,15 +146,6 @@
 
 }
 
-.modal__form-input {
-    position: relative;
-    padding-left: 40px;
-    width: 408px;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.20);
-    margin-bottom: 10px;
-}
 
 .modal__form-input:focus {
     outline: none;
@@ -180,6 +222,7 @@
     font-size: 16px;
 
     font-weight: 700;
+    margin-bottom: 40px;
 
     letter-spacing: 0.96px;
     padding: 10px 52px;
