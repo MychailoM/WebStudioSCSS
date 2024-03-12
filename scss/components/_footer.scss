@@ -95,9 +95,7 @@
     }
 }
 
-.footer__input-container {
-    
-}
+
 
 .footer__input-subscribe {
     display: flex;
@@ -143,23 +141,27 @@
 }
 
 @media screen and (min-width: 768px) {
-        
-        
-        
-        
+        .footer__social-subscribe{
+            margin: 0 auto;
+        }
 
         .footer__geo {justify-content: start;}
 
-        .footer__list {
-            
+        .footer__list {      
+            display: flex;      
             justify-content: space-between;
             flex-wrap: wrap;
             flex-direction: row;
+            margin: 0 px;
         }
 
         .footer__input-subscribe {
+            
+            
             padding: 15px 387px 15px 16px;
         }
+
+
 }
 
 @media screen and (min-width: 1200px) {

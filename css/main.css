@@ -142,7 +142,7 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -153,6 +153,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1110,12 +1111,18 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  .footer__social-subscribe {
+    margin: 0 auto;
+  }
   .footer__geo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
   }
   .footer__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1125,6 +1132,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 0 px;
   }
   .footer__input-subscribe {
     padding: 15px 387px 15px 16px;

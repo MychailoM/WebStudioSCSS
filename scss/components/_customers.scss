@@ -35,12 +35,16 @@
     .customers__icon{
         width: 160px;
         height: 92px;
+        
     }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
     .regular__customers-list{
         flex-wrap: nowrap;
+        
     }
 
     .customers__icon {
