@@ -1,3 +1,4 @@
+
 .header__wrap {
     @include spase-betven();
     align-items: center;
@@ -7,6 +8,7 @@
     padding-bottom: 25px;
     padding-top: 25px;
     border-bottom: 1px solid $header-border;
+    
 }
 
 .header__logo-wrap {
@@ -128,4 +130,28 @@
 .header__email {
     margin-right: 50px;
 }
+
+@media screen and (max-width: 1199px){
+    .header__contacts-list{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .header__contact{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header__navigation-list{
+        display: none;
+    }
+
+    .header__contacts-list{
+        display: none;
+    }
+}
+
 

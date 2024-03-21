@@ -28,21 +28,20 @@
             <div class="header__logo-wrap">
                 <a class="header__studio" href="index.html">
                     <span class="header__web">Web</span>Studio
-
+    
                 </a>
                 <nav>
                     <ul class="header__navigation-list">
-
+    
                         <li class="header-navigation"> <a class="header__nav" href="index.html">Студія</a> </li>
-
-                        <li class="header-navigation"><a class="header__nav current" href="portfolio.html">Портфоліо</a>
-                        </li>
-
+    
+                        <li class="header-navigation"><a class="header__nav current" href="portfolio.html">Портфоліо</a></li>
+    
                         <li class="header-navigation"><a class="header__nav" href="#">Контакти</a></li>
                     </ul>
                 </nav>
             </div>
-
+    
             <ul class="header__contacts-list">
                 <li class="header__contact header__email"><a class="header__contacts" href="mailto:info@devstudio.com">
                         <svg class="header__contact-icon" width="16px" height="12px">
@@ -55,6 +54,60 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+        </div>
+        <!-- mobile menu -->
+    
+        <button type="button" class="menu__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <img src="./photo/menu_40px.svg" alt="a" class="menu__button-open-icon">
+        </button>
+    
+    
+        <div class="menu__container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu__button js-close-menu">
+                <img class="menu__button-close-icon" src="./photo/close_40px.svg" alt="a">
+            </button>
+    
+            <div class="menu__box">
+                <div class="mobile__menu">
+                    <nav class="mobile__nav">
+                        <ul class="mobile__nav-list">
+                            <li class="mobile__nav-iteem">
+                                <a class="mobile__nav-link current" href="index.html">Студія</a>
+                            </li>
+                            <li class="mobile__nav-iteem">
+                                <a class="mobile__nav-link" href="portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="mobile__nav-iteem">
+                                <a class="mobile__nav-link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="mobile__socials">
+                    <ul class="mobile__contacts">
+                        <li class="mobile__contacts-item"><a class="mobile__contacts-tel" href="tel: +38-096-111-11-11">+38
+                                096 111 11 11</a></li>
+                        <li class="mobile__contacts-item"><a class="mobile__contacts-mail"
+                                href="mailto: info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile__social-list">
+                        <li class="mobile__socials-item">
+                            <a href="#" class="mobile__social-link">Instagram</a>
+                        </li>
+                        <li class="mobile__socials-item">
+                            <a href="#" class="mobile__social-link">Twitter</a>
+                        </li>
+                        <li class="mobile__socials-item">
+                            <a href="#" class="mobile__social-link">Facebook</a>
+                        </li>
+                        <li class="mobile__socials-item">
+                            <a href="#" class="mobile__social-link">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+    
+            </div>
         </div>
     </header>
 
@@ -338,7 +391,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="mobile-menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
