@@ -61,6 +61,10 @@
     align-items: center;
 }
 
+.project__sub-card-text{
+    width: 340px;
+}
+
 @media screen and (min-width: 480px) {
     .project__main-card{
         width: 450px;

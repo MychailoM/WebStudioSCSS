@@ -70,17 +70,53 @@
     background-position: center;
 }
 
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefits__card::before{
+        background-image: url(./../../photo/antenna@2x.webp);
+    }
+
+} 
+
 .benefits__card:nth-child(2)::before {
     background-image: url(../photo/clock.webp);
 }
+
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefits__card:nth-child(2)::before{
+        background-image: url(./../../photo/clock@2x.webp);
+    }
+
+} 
 
 .benefits__card:nth-child(3)::before {
     background-image: url(../photo/diagram.webp);
 }
 
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefits__card:nth-child(3)::before{
+        background-image: url(./../../photo/diagram@2x.webp);
+    }
+
+} 
+
 .benefits__card:nth-child(4)::before {
     background-image: url(../photo/astronaut.webp);
 }
+
+@media (min-device-pixel-ratio:2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefits__card:nth-child(4)::before{
+        background-image: url(./../../photo/astronaut@2x.webp);
+    }
+
+} 
 
 
 

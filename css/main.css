@@ -161,6 +161,12 @@ body {
     width: 1200px;
   }
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .name__section {
   color: #212121;
   font-weight: 700;
@@ -524,6 +530,11 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(./../../photo/Img@2x.webp);
+  }
+}
 .hero__title {
   color: #FFFFFF;
   font-size: 26px;
@@ -642,18 +653,38 @@ body {
   background-position: center;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefits__card::before {
+    background-image: url(./../../photo/antenna@2x.webp);
+  }
+}
 .benefits__card:nth-child(2)::before {
   background-image: url(../photo/clock.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefits__card:nth-child(2)::before {
+    background-image: url(./../../photo/clock@2x.webp);
+  }
+}
 .benefits__card:nth-child(3)::before {
   background-image: url(../photo/diagram.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefits__card:nth-child(3)::before {
+    background-image: url(./../../photo/diagram@2x.webp);
+  }
+}
 .benefits__card:nth-child(4)::before {
   background-image: url(../photo/astronaut.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefits__card:nth-child(4)::before {
+    background-image: url(./../../photo/astronaut@2x.webp);
+  }
+}
 .benefits__text {
   color: #757575;
   font-weight: 400;
@@ -1410,6 +1441,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.project__sub-card-text {
+  width: 340px;
 }
 
 @media screen and (min-width: 480px) {
