@@ -171,21 +171,29 @@
         }
     
         .footer__contacts {
-    
-            justify-content: left;
+            margin-right: 70px;
+            
+        }
+
+        .footer__social{
+            margin-left: 70px;
         }
 
     .footer__input-subscribe {
-        padding: 15px 295px 15px 16px;
-        margin-right: 0;
+        padding: 15px 195px 15px 16px;
+        
     }
 
         .footer__list {
     
-            
+            justify-content: space-between;
             flex-wrap: nowrap;
             
         }
+
+.footer__list-name {    
+    justify-content: start;
+}
 
         .footer__input-container {
             display: flex;
